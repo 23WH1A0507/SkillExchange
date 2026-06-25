@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import axios from "axios";
 import { UserContextProvider } from "./util/UserContext.jsx";
 
+axios.defaults.baseURL = "https://skill-exchange-epm8.vercel.app";
 if (import.meta.env.DEV) {
   console.log("Running in development mode");
   axios.defaults.baseURL = import.meta.env.VITE_LOCALHOST || "http://localhost:8000";
