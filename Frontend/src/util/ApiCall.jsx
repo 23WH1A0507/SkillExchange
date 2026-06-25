@@ -1,7 +1,7 @@
-axios.defaults.baseURL = import.meta.env.VITE_API_URL;
+
 import { toast } from "react-toastify";
 import axios from "axios";
-
+axios.defaults.baseURL = "https://skill-exchange-epm8.vercel.app";
 const ApiCall = async (url, method, navigate, setUser, data) => {
   console.log("******** Inside ApiCall function ********");
 
